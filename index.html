@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="rnd.js" defer></script>
+  <script src="event.js" defer></script>
+  <script src="test.js" defer></script>
+  <title>Time Capsule</title>
+</head>
+<body>
+  <main>
+    <h1 class="text-center">Time Capsule Test</h1>
+    <div class="event">
+      <h3 class="text-center">Event info</h3>
+      <label for="perSec">Эвентов в секунду</label>
+      <input type="number" name="perSec" id="perSec" value="10">
+      <p class="out"></p>
+    </div>
+    
+    <div class="debug">
+      <h3 class="text-center">Debug info</h3>
+      <div class="flex">
+        <button id="startSpam" autofocus>start spam</button>
+        <button id="stopSpam">stop spam</button>
+        <button id="showAll">show All</button>
+      </div>
+      <p class="out"></p>
+      <p class="out2"></p>
+
+      <span class="progress"></span>
+    </div>
+  </main>
+</body>
+</html>

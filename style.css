@@ -1,0 +1,141 @@
+* {
+  color: hsl(0 0% 90%);
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: dark;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 11%);
+}
+
+/* ==================== */
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* ==================== */
+
+
+main {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: hsl(97, 70%, 10%);
+  padding: 1rem;
+}
+
+label {
+  display: block;
+}
+
+button {
+	background-color: #6a1b9a;
+	color: #eceff1;
+	border: none;
+	border-radius: 0;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+button:hover {
+  background-color: #7b1fa2;
+}
+button:active,
+button:focus-visible {
+  background-color: #4a148c;
+}
+
+input[type="number"] {
+  max-width: 10ch;
+  font-size: 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin-block: 0.5em;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+
+
+.debug {
+  position: relative;
+}
+
+span.progress {
+  --progress-bg: hsl(97, 70%, 30%);
+  --progress-cut: hsl(282, 66%, 35%);
+  
+  display: block;
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 10vw;
+  background-color: var(--progress-bg);
+}
+span.progress.animating {
+  background-size: 150%;
+  animation: progress 3s linear infinite;
+  background-image: linear-gradient(
+    150deg,
+    var(--progress-bg) 6%,
+    var(--progress-cut) 6%,
+    var(--progress-cut) 9%,
+    var(--progress-bg) 9%,
+    var(--progress-bg) 15%,
+    var(--progress-cut) 15%,
+    var(--progress-cut) 18%,
+    var(--progress-bg) 18%,
+    var(--progress-bg) 24%,
+    var(--progress-cut) 24%,
+    var(--progress-cut) 27%,
+    var(--progress-bg) 27%,
+    var(--progress-bg) 33%,
+    var(--progress-cut) 33%,
+    var(--progress-cut) 36%,
+    var(--progress-bg) 36%,
+    var(--progress-bg) 42%,
+    var(--progress-cut) 42%,
+    var(--progress-cut) 45%,
+    var(--progress-bg) 45%,
+    var(--progress-bg) 51%,
+    var(--progress-cut) 51%,
+    var(--progress-cut) 54%,
+    var(--progress-bg) 54%,
+    var(--progress-bg) 60%,
+    var(--progress-cut) 60%,
+    var(--progress-cut) 63%,
+    var(--progress-bg) 63%,
+    var(--progress-bg) 69%,
+    var(--progress-cut) 69%,
+    var(--progress-cut) 72%,
+    var(--progress-bg) 72%,
+    var(--progress-bg) 78%,
+    var(--progress-cut) 78%,
+    var(--progress-cut) 81%,
+    var(--progress-bg) 81%,
+    var(--progress-bg) 87%,
+    var(--progress-cut) 87%,
+    var(--progress-cut) 90%,
+    var(--progress-bg) 90%,
+    var(--progress-bg) 96%,
+    var(--progress-cut) 96%,
+    var(--progress-cut) 99%,
+    var(--progress-bg) 99%
+  );
+}
+
+@keyframes progress {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 110%;
+  }
+}
